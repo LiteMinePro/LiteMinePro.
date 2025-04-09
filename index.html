@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LiteMinePro</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="logo">
+    <img src="https://cryptologos.cc/logos/litecoin-ltc-logo.png" width="30"/>
+    <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" width="30"/>
+    <img src="https://cryptologos.cc/logos/dogecoin-doge-logo.png" width="30"/>
+    <span>LiteMinePro</span>
+  </div>
+  <div class="wallet-input">
+    <input id="wallet" type="text" placeholder="Enter your wallet address to start mining"/>
+  </div>
+  <div class="packages hidden" id="plans">
+    <div class="package btc">
+      <h2>Bitcoin Plan</h2>
+      <p>Price: 0.001 BTC</p>
+      <p>Profit: 0.0015 BTC</p>
+      <p>Duration: 3 Days</p>
+      <button onclick="showPayment('btc')">Activate</button>
+    </div>
+    <div class="package ltc">
+      <h2>Litecoin Plan</h2>
+      <p>Price: 0.05 LTC</p>
+      <p>Profit: 0.075 LTC</p>
+      <p>Duration: 3 Days</p>
+      <button onclick="showPayment('ltc')">Activate</button>
+    </div>
+    <div class="package doge">
+      <h2>Dogecoin Plan</h2>
+      <p>Price: 100 DOGE</p>
+      <p>Profit: 150 DOGE</p>
+      <p>Duration: 3 Days</p>
+      <button onclick="showPayment('doge')">Activate</button>
+    </div>
+  </div>
+  <div class="payment-box hidden" id="paymentBox">
+    <h3>Send payment to the address below:</h3>
+    <p id="payAddress"></p>
+    <div id="countdown" class="countdown"></div>
+    <button onclick="goBack()">Back</button>
+  </div>
+  <div class="note">*This project is in early access. Payouts are reviewed manually within 24h.*</div>
+  <div id="notification" class="notification"></div>
+</body>
+</html>

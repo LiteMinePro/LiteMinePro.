@@ -1,0 +1,71 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.wallet-input input {
+  padding: 1rem;
+  width: 90%;
+  max-width: 400px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+.packages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.package {
+  width: 280px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #222;
+  border: 1px solid #444;
+}
+.btc { border-color: orange; }
+.ltc { border-color: silver; }
+.doge { border-color: gold; }
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.payment-box {
+  margin-top: 2rem;
+}
+.hidden {
+  display: none;
+}
+.note {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  display: none;
+}
